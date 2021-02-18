@@ -1,11 +1,11 @@
 export async function getAllUsers() {
-    const url = `http://api.addlist.local:3080/api/users`
+    const url = `api.addlist.local/api/users`
     const response = await fetch(url);
     return await response.json();
 }
 
 export async function createUser(data) {
-    const url = `http://api.addlist.local:3080/api/user`
+    const url = `api.addlist.local/api/user`
     const response = await fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
